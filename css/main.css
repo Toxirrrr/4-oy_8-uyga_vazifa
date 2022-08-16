@@ -1,11 +1,24 @@
-body {
-    background: rgb(232,255,0);
-    background: linear-gradient(90deg, rgba(232,255,0,1) 0%, rgba(0,241,255,1) 38%, rgba(255,0,202,1) 71%, rgba(255,0,0,1) 100%);
-}
-
 h1 {
     font-size: 72px;
     background: -webkit-linear-gradient(rgb(255, 0, 64), rgb(238, 255, 0));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-  }
+}
+
+body {
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    }
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
